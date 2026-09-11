@@ -1,7 +1,7 @@
 print("=====barbearia=====")
 def saudacao(mensagem):
-    print("Saudação")
-saudacao("seja bem vindo á barbearia")
+    print("seja bem vindo á barbearia")
+saudacao("mensagem")
 
 print("""1 - Novo Agendamento
 2 - Agendamentos Anteriores
@@ -33,9 +33,10 @@ while True:
                 
         elif escolha == 3:
             print("Saindo...")
+            break
     except ValueError:
         continue
-    continuar = str(input("Deseja continuar? S/N")).upper()
+    continuar = str(input("Deseja realizar um novo atendimento? S/N: ")).upper()
     if continuar == "N":
         print("Fim")
         break

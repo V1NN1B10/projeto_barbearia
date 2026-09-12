@@ -38,5 +38,5 @@ while True:
         continue
     continuar = str(input("Deseja realizar um novo atendimento? S/N: ")).upper()
     if continuar == "N":
-        print("Fim")
+        print("Fim...")
         break
